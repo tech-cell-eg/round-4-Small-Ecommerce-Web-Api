@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\api\PolicyController;
 use App\Http\Controllers\api\ProductController;
 use App\Http\Controllers\api\TestimonialController;
 use Illuminate\Http\Request;
@@ -25,3 +26,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::Resource('products', ProductController::class);
 
 Route::get('/testimonials', TestimonialController::class);
+
+Route::get('/policies', PolicyController::class);
+

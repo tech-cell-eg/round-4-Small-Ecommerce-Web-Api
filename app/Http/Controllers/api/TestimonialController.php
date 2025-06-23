@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\TestimonialResource;
 use App\Models\Testimonial;
 use App\Traits\ApiResponse;
 use Illuminate\Http\Request;
