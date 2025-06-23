@@ -13,7 +13,7 @@ class TestimonialController extends Controller
         $testimonials = Testimonial::all();
 
         if($testimonials){
-            return ApiResponse::sendResponse($testimonials,'Testimonials retrieved successfully');
+            return ApiResponse::sendResponse(TestimonialResource::collection($testimonials),'Testimonials retrieved successfully');
         }
             return ApiResponse::sendResponse([], 'Testimonials not found');
     }
