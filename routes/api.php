@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\api\PolicyController;
 use App\Http\Controllers\api\ProductController;
+use App\Http\Controllers\api\QuestionController;
 use App\Http\Controllers\api\TestimonialController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -29,3 +30,4 @@ Route::get('/testimonials', TestimonialController::class);
 
 Route::get('/policies', PolicyController::class);
 
+Route::get('/questions', QuestionController::class);
