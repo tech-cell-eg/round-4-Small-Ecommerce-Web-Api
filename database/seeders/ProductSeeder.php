@@ -22,6 +22,7 @@ class ProductSeeder extends Seeder
             'name' => 'Men T-Shirt',
             'description' => 'Comfortable cotton t-shirt for men.',
             'price' => 29.99,
+            'image' => 'default.jpg',
             'category_id' => $men->id,
         ]);
 
@@ -29,6 +30,7 @@ class ProductSeeder extends Seeder
             'name' => 'Women Dress',
             'description' => 'Elegant summer dress for women.',
             'price' => 49.99,
+            'image' => 'default.jpg',
             'category_id' => $women->id,
         ]);
 
@@ -36,6 +38,7 @@ class ProductSeeder extends Seeder
             'name' => 'Kids Jacket',
             'description' => 'Warm and stylish jacket for kids.',
             'price' => 39.99,
+            'image' => 'default.jpg',
             'category_id' => $kids->id,
         ]);
     }
