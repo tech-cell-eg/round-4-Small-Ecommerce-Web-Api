@@ -33,7 +33,6 @@ class ProductResource extends Resource
                 ->required(),
 
             Forms\Components\FileUpload::make('image')
-                ->directory('products')
                 ->image()
                 ->imagePreviewHeight('150')
                 ->required(),
@@ -46,7 +45,6 @@ class ProductResource extends Resource
             ->columns([
                 ImageColumn::make('image')
                     ->disk('public')
-                    ->directory('products')
                     ->circular(),
                 TextColumn::make('name')->searchable(),
                 TextColumn::make('price'),
