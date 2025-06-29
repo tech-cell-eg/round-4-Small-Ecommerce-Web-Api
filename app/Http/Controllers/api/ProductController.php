@@ -36,7 +36,7 @@ class ProductController extends Controller
         if ($product) {
             return ApiResponse::sendResponse(new ProductResource($product), 'Product retrieved successfully.');
         }
-        return ApiResponse::sendResponse([], 'Product not found.');
+        return ApiResponse::sendResponse([], 'Product not found.', 404);
     }
 
 
